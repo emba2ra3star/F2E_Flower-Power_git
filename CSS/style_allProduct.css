@@ -1,0 +1,84 @@
+.body{
+    background-color: #fff;
+}
+
+/* -----header----- */
+.header{
+    display: flex;
+}
+
+/* header */
+.headerBox{}
+
+.menu_btn{}
+
+.header_LOGO{}
+
+.header_user_setting_btn{}
+
+/* navigation */
+.nav{}
+
+/* -----main----- */
+.container{
+    height: 100vh;
+    margin-top: 0;
+}
+
+.main{
+    display: flex;
+    justify-items: space-around;
+}
+
+/* banner */
+.banner{
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    max-height: 65vh;
+    box-shadow: 0 1rem 4rem -50px #898989;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* sideBox */
+.sideBox{}
+
+.sideBox_title{}
+
+.sideBox_list{
+    /* list-style: none; */
+}
+
+.sideBox_list_item{}
+
+.sideBox_lidt_link{}
+
+/* content */
+.content{}
+
+.content_title{}
+
+.product_showcase{}
+
+/* 系列 */
+.series_box{}
+
+.series_title{}
+
+.product_cards_list{
+    display: flex;
+    list-style: none;
+}
+
+.product_card{}
+
+.product_name{}
+
+/* -----footer----- */
+
+.footer{
+    background-color: #a9a9a9;
+}
