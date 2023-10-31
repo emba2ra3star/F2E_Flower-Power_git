@@ -1,18 +1,30 @@
-.body{
-    background-color: aliceblue;
-}
 .container{
-    height: 100vh;
-    width: 100%;
+    /*height: 90vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中对齐 article */
+    margin-bottom: 30vh;
+}
+.p{
+    white-space: normal;
 }
 .main_pic{
-    display: block;
+   /* display: block; */
+    display: flex;
     width: 100%;
-    height: 80%;
+    max-height: 85vh;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10vh;
+    border: 70px solid #f6b366;
+    /* border-radius: 20px; */
+    
 }
 .img_s{
     width: 100%;
-    
+    height: auto; 
+    border-radius: 20px;
+
 }
 .stylebox{  /*onebox外面的邊框甚麼的*/
     display: flex;
@@ -20,15 +32,37 @@
 }
 .one_box{
     display: flex;
-
+    align-items: stretch;
     justify-content: space-between; /* 将内容分散在两侧 */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     flex-shrink: 0;
 }
-.box1, .box2{
-    width: 48%; /* 设置每个方框的宽度为容器宽度的一半 */
-    background-color: #FF5733; /* 设置背景颜色 */
-    padding: 20px; /* 设置内边距 */
+.box1, .box3 {
+    border: 15px solid #E986BE;
+    margin-right: 20%;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 2;
 }
-.box1{
+
+.box2, .box4 {
+    flex: 3;
+    padding: 20px;
+}
+.footer{
+    /* display: flex;
+    justify-content: center;
+    border-radius: 0;
+    width: 100%;
+    line-height: 10vh;
+    background-color: black; */
+
+    display: flex;
+    background-color: black;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    line-height: 5;
 
 }
