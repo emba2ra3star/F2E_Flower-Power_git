@@ -47,14 +47,20 @@
 }
 
 .navBar_btnBox{
+    position: relative;
+    white-space: nowrap;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
+    transition: 0.2s linear;
 }
 
 .navBar_btn{
     display: flex;
+    justify-content: center;
     color: #FFF;
+    width: 100%;
     padding: 1rem;
     text-decoration: none;
 }
@@ -65,21 +71,24 @@
     top:100%;
     display: none;
     flex-direction: column;
-    align-items: center;
-    width: inherit;
+    width: 100%;
     margin: 0;
     padding: 0px;
     list-style: none;
     transition: 0.2s linear;
 }
 
-.navBar_btnBox:hover,.navBar_showList:hover{
+.navBar_btnBox:hover{
     background-color: #98c1d9;
     width: 120%;
 }
 
 .navBar_btnBox:hover .navBar_showList{
     display: flex;
+}
+
+.navBar_btnBox:hover .navBar_btn:hover{
+    background-color: #98c1d9;
 }
 
 /* -----banner----- */
