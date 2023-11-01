@@ -4,29 +4,57 @@
 
 /* -----header----- */
 .header{
-    background-color: #ffffff;
+    background-color: #1d1e2c;
+    color: #fff;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-width: inherit;
     height: 10vh;
     padding: 0px 30px;
 }
 
 .menu{}
 
-.header_LOGO{}
+.menu_btn{}
+
+#header_LOGO{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#header_LOGO img{
+    height: 80%;
+}
 
 .header_userSetting_btn{}
 
 /* navigation */
-.menu_btn{}
+.navBar{
+    background-color: rgba(89, 101, 111, 0.8);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: inherit;
+}
+.navBar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
 
-.nav{
+#navBar_showSeries{
     position: absolute;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 0px auto;
 }
 
 /* -----banner----- */
@@ -130,5 +158,5 @@
 /* -----footer----- */
 
 .footer{
-    background-color: #a9a9a9;
+    background-color: #98c1d9;
 }
