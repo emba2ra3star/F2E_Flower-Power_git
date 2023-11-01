@@ -4,26 +4,29 @@
 
 /* -----header----- */
 .header{
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 30px;
+    height: 10vh;
+    padding: 0px 30px;
 }
 
-/* header */
-.headerBox{
-    
-}
-
-.menu_btn{}
+.menu{}
 
 .header_LOGO{}
 
-.header_user_setting_btn{}
+.header_userSetting_btn{}
 
 /* navigation */
+.menu_btn{}
+
 .nav{
     position: absolute;
+    z-index: 1;
 }
 
 /* -----banner----- */
@@ -32,8 +35,9 @@
     display: flex;
     width: 100%;
     max-height: 65vh;
-    /* box-shadow: 0 1rem 4rem -50px #898989; */
+    box-shadow: 0 1rem 4rem -50px #898989;
     align-items: center;
+    margin-top: 10vh;
     overflow: hidden;
 }
 
