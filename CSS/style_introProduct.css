@@ -2,6 +2,103 @@
     flex-direction: column;
     
 }
+
+/* -----header_start----- */
+.header{
+    background-color: #1d1e2c;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: inherit;
+    height: 10vh;
+    padding: 0px 30px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#menu_btn{
+    height: 80%;
+}
+
+#header_LOGO{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#header_LOGO img{
+    height: 80%;
+}
+
+#header_userSetting_btn{
+    height: 80%;
+}
+
+/* navigation */
+#navBar{
+    background-color: rgba(89, 101, 111, 0.8);
+    position: fixed;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: inherit;
+    padding: 0px 5%;
+}
+
+.navBar_btnBox{
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    transition: 0.2s linear;
+}
+
+.navBar_btn{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navBar_showList{
+    background-color: rgba(89, 101, 111, 0.8);
+    position:absolute;
+    top:100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    transition: 0.2s linear;
+}
+
+.navBar_btnBox:hover{
+    background-color: #98c1d9;
+    width: 120%;
+}
+
+.navBar_btnBox:hover .navBar_showList{
+    display: flex;
+}
+
+.navBar_btnBox:hover .navBar_btn:hover{
+    background-color: #98c1d9;
+}
+/* -----header_end----- */
+
 .container{
     /*height: 90vh;*/
     /* display: flex; */
