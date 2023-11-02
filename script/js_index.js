@@ -8,13 +8,21 @@ $(document).ready(function(){
             $("#nav_toggle").css("display","flex");
         }
     });
+    // LOGO
+    $(".nav_LOGO").mouseenter(function(){
+        $(".body").css("background-image",'url("./img/ketVersion.jpg")')
+    })
+    // 所有商品
+    $("#nav_allProduct_link").mouseenter(function(){
+        $(".body").css("background-image",'url("./img/ketVersion.jpg")')
+    })
     // 系列1
     $("#series1").mouseenter(function(){
-        $(".body").css("background-image",'url("./img/pff.svg")')
+        $(".body").css("background-image",'url("./img/series_1_hoverbg.png")')
     })
     // 系列2
     $("#series2").mouseenter(function(){
-        $(".body").css("background-image",'url("./img/test_img1.png")')
+        $(".body").css("background-image",'url("./img/series_2_hoverbg.png")')
     })
 });
 
