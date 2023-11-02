@@ -38,7 +38,7 @@
     background-color: rgba(89, 101, 111, 0.8);
     /* background-color: rgba(255, 241, 235,0.8); */
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     width: 100%;
