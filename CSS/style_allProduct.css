@@ -18,9 +18,15 @@
     padding: 0px 30px;
 }
 
-.menu{}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
-.menu_btn{}
+#menu_btn{
+    height: 80%;
+}
 
 #header_LOGO{
     display: flex;
@@ -34,11 +40,10 @@
 .header_userSetting_btn{}
 
 /* navigation */
-.navBar{
+#navBar{
     background-color: rgba(89, 101, 111, 0.8);
-    /* background-color: rgba(255, 241, 235,0.8); */
     position: fixed;
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;

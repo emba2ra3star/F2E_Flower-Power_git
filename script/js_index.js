@@ -8,6 +8,7 @@ $(document).ready(function(){
             $("#nav_toggle").css("display","flex");
         }
     });
+    
     // LOGO
     $(".nav_LOGO").mouseenter(function(){
         $(".body").css("background-image",'url("./img/ketVersion.jpg")')
