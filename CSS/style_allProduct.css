@@ -5,7 +5,6 @@
 /* -----header----- */
 .header{
     background-color: #1d1e2c;
-    /* background-color: #f081d6; */
     color: #fff;
     position: fixed;
     top: 0;
@@ -37,13 +36,15 @@
     height: 80%;
 }
 
-.header_userSetting_btn{}
+#header_userSetting_btn{
+    height: 80%;
+}
 
 /* navigation */
 #navBar{
     background-color: rgba(89, 101, 111, 0.8);
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -203,4 +204,10 @@
 
 .footer{
     background-color: #98c1d9;
+    display: flex;
+    background-color: #1d1e2c;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    line-height: 5;
 }
