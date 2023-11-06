@@ -61,7 +61,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    transition: 0.2s linear;
+    /* transition: 0.2s linear; */
 }
 
 .navBar_btn{
@@ -88,7 +88,7 @@
 
 .navBar_btnBox:hover{
     background-color: #98c1d9;
-    width: 120%;
+    /* width: 120%; */
 }
 
 .navBar_btnBox:hover .navBar_showList{
@@ -121,7 +121,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 0px 10%;
+    margin: 0px 10% 15vh;
     gap: 5rem;
 }
 
@@ -205,8 +205,10 @@
 /* -----footer----- */
 
 .footer{
+    /* position: fixed;
+    bottom: 0; */
     background-color: #98c1d9;
-    display: flex;
+    display:flex;
     background-color: #1d1e2c;
     height: 10vh;
     justify-content: center;
