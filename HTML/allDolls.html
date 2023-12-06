@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Power | All Dolls</title>
+    <!-- <link rel="shortcut icon" href="./img/carrot.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <!-- <link rel="stylesheet" href="../CSS/style_global.css"> -->
+    <link rel="stylesheet" href="../CSS/style_allDolls.css">
+    <!----- fonts ----->
+    <!-- Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Agbalumo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu"><img id="menu_btn" src="../img/test_img1.pn" alt="menu btn"></div>
+        <a id="header_LOGO" href="../index.html"><img src="../img/Logo_.png" alt="LOGO"></a>
+        <img id="header_userSetting_btn" src="../img/test_img1" alt="user setting">
+    </header>
+    <nav id="navBar">
+        <div class="navBar_btnBox"><a class="navBar_btn" href="../index.html">回到首頁</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="./allProduct.html">所有商品</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="./introProduct.html">本季主打</a></div>
+        <div class="navBar_btnBox">
+            <a class="navBar_btn" href="#">系列介紹專區</a>
+            <ul class="navBar_showList">
+                <li><a class="navBar_btn" href="./introProduct.html">系列一</a></li>
+                <li><a class="navBar_btn" href="./introProduct.html">系列二</a></li>
+                <li><a class="navBar_btn" href="./introProduct.html">系列三</a></li>
+            </ul>
+        </div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="#">常見問題</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="./aboutUs.html">關於我們</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
+    </nav>
+    <main>
+        <!-- 放margin -->
+        <div class="wrapperWidth">
+            <!-- banner -->
+            <div class="banner container">
+                <img src="../img/pf_flower.svg" alt="banner">
+            </div>
+
+            <!-- 麵包屑導航 -->
+            <nav class="breadcrumb">
+                <ul>
+                    <li><a href="/">首頁</a></li>
+                    <li>><a href="/categories">分類</a></li>
+                    <li>><a href="/categories/subcategory">子分類</a></li>
+                    <li>>具體頁面</li>
+                </ul>
+            </nav>
+
+            <!-- 所有商品展示欄 -->
+            <div class="container">
+                <h1 class="content_title">所有商品</h1>
+                <div class="hori_line"></div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+
+
+    <!-- javascipt -->
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <script src="../script/js_header_btn.js"></script>
+</body>
+
+</html>
