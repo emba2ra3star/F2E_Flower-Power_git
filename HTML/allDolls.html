@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <!-- header + navigator -->
     <header>
         <div class="menu"><img id="menu_btn" src="../img/test_img1.pn" alt="menu btn"></div>
         <a id="header_LOGO" href="../index.html"><img src="../img/Logo_.png" alt="LOGO"></a>
@@ -45,31 +46,30 @@
         <div class="navBar_btnBox"><a class="navBar_btn" href="./aboutUs.html">關於我們</a></div>
         <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
     </nav>
-    <main>
-        <!-- 放margin -->
-        <div class="wrapperWidth">
-            <!-- banner -->
-            <div class="banner container">
-                <img src="../img/pf_flower.svg" alt="banner">
-            </div>
 
-            <!-- 麵包屑導航 -->
-            <nav class="breadcrumb">
-                <ul>
-                    <li><a href="/">首頁</a></li>
-                    <li>><a href="/categories">分類</a></li>
-                    <li>><a href="/categories/subcategory">子分類</a></li>
-                    <li>>具體頁面</li>
-                </ul>
-            </nav>
-
-            <!-- 所有商品展示欄 -->
-            <div class="container">
-                <h1 class="content_title">所有商品</h1>
-                <div class="hori_line"></div>
-
-            </div>
+    <!-- mainArea -->
+    <main class="container">
+        <!-- 跑馬燈 -->
+        <!-- banner -->
+        <div class="banner container">
+            <img src="../img/pf_flower.svg" alt="banner">
         </div>
+
+        <!-- 麵包屑導航 -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">首頁</a></li>
+              <li class="breadcrumb-item active" aria-current="page">所有公仔</li>
+            </ol>
+          </nav>
+
+        <!-- 所有商品展示欄 -->
+        <div class="container">
+            <h1 class="content_title">所有商品</h1>
+            <div class="hori_line"></div>
+
+        </div>
+
     </main>
     <footer class="footer"></footer>
 
