@@ -1,0 +1,50 @@
+/* ---------------HEADER--------------- */
+.header{
+    background-color: #F6F3FC;
+    height: 100px;
+}
+
+.header_Logo{
+    height: 100%;
+}
+
+/* ---------------NAVBAR--------------- */
+.navbar{
+    padding: 0;
+}
+/* 選單 */
+.navBar_ul {
+    flex-direction: row;
+}
+
+/* ---------------ALL-ITEMS--------------- */
+
+
+
+/* 展示照片 */
+.AllItems_img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* ---------------FOOTER--------------- */
+
+/* 社群icon */
+.socialMedia_icon {
+    width: 30%;
+}
+/* FOOTER_LOGO */
+.footer_Logo{
+    width: 30%;
+}
+
+/* 水平線 */
+.horiLine {
+    height: 0.2px;
+    background-color: black;
+}

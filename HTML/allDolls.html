@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" href="../CSS/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="../css/style_global.css"> -->
   <link rel="stylesheet" href="../CSS/style_allDolls.css">
 
   <!----- fonts ----->
@@ -24,7 +23,7 @@
 
 <body>
   <!-- header + navigator -->
-  <header>
+  <!-- <header>
     <div class="menu"><img id="menu_btn" src="../img/test_img1.pn" alt="menu btn"></div>
     <a id="header_LOGO" href="../index.html"><img src="../img/Logo_.png" alt="LOGO"></a>
     <img id="header_userSetting_btn" src="../img/test_img1" alt="user setting">
@@ -45,27 +44,35 @@
     <div class="navBar_btnBox"><a class="navBar_btn" href="#">常見問題</a></div>
     <div class="navBar_btnBox"><a class="navBar_btn" href="./aboutUs.html">關於我們</a></div>
     <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
-  </nav>
-
-  <nav class="navbar navbar-expand-lg bg-light">
+  </nav> -->
+  <header class="header row">
+    <!-- 漢堡選單 -->
+    <button class="navbar-toggler col-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- LOGO -->
+    <img class="header_Logo col-10" src="../img/Logo_.png" alt="...">
+    <!-- 用戶ICON -->
+    <img class="col-1" src="../img___/img_icon/Male User.png" alt="...">
+  </header>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+        <ul class="navbar-nav navBar_ul">
+          <li class="nav-item col">
             <a class="nav-link active" aria-current="page" href="#">回到首頁</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link" href="#">所有商品</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link" href="#">本季主打</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown col">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               系列介紹專區
             </a>
             <ul class="dropdown-menu">
@@ -74,26 +81,25 @@
               <li><a class="dropdown-item" href="#">系列三</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link" href="#">常見問題</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link" href="#">關於我們</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col">
             <a class="nav-link" href="#">版權宣告</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-
+  </nav> 
   <!-- mainArea -->
-  <main class="container">
+  <main>
     <!-- 跑馬燈 -->
 
     <!-- banner -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="container carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../img___/img_banner/banner-black.png" class="d-block w-100" alt="...">
@@ -111,7 +117,7 @@
     </div>
 
     <!-- 麵包屑導航 -->
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">首頁</a></li>
         <li class="breadcrumb-item active" aria-current="page">所有公仔</li>
@@ -119,28 +125,27 @@
     </nav>
 
     <!-- 所有商品展示欄 -->
-    <div>
+    <div class="container">
       <div>ALL-ITEMS</div>
       <div>
         <div>
           <img src="../img___/img_icon/corner_1.png" alt="...">
           <img src="../img___/img_icon/corner_2.png" alt="...">
         </div>
-        <div>
-          <img src="../img___/img_doll/IMG_1.1.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_1.2.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_1.3.jpeg" alt="">
+        <div class="row">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.1.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.2.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.3.jpeg" alt="...">
         </div>
-
-        <div>
-          <img src="../img___/img_doll/IMG_2.1.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_2.2.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_2.3.jpeg" alt="">
+        <div class="row">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.1.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.2.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.3.jpeg" alt="...">
         </div>
-        <div>
-          <img src="../img___/img_doll/IMG_3.1.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_3.2.jpeg" alt="">
-          <img src="../img___/img_doll/IMG_3.3.jpeg" alt="">
+        <div class="row">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.1.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.2.jpeg" alt="...">
+          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.3.jpeg" alt="...">
         </div>
       </div>
       <!-- 換頁紐 -->
@@ -150,24 +155,26 @@
       </div>
     </div>
   </main>
-  
+
   <!-- footer -->
   <footer>
-    <div>
-      <div>
-        <a href="#"><img src="" alt="TWITTER"></a>
-        <a href="#"><img src="" alt="IG"></a>
-        <a href="#"><img src="" alt="FB"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col row">
+          <a class="col" href="#"><img class="socialMedia_icon" src="../img___/img_icon/twitter.png" alt="TWITTER"></a>
+          <a class="col" href="#"><img class="socialMedia_icon" src="../img___/img_icon/ig.png" alt="IG"></a>
+          <a class="col" href="#"><img class="socialMedia_icon" src="../img___/img_icon/fb.png" alt="FB"></a>
+        </div>
+        <img class="footer_Logo col" src="../img/Logo_.png" alt="LOGO">
+        <div class="row col">
+          <a class="col" href="#">常見問題</a>
+          <a class="col" href="#">關於我們</a>
+          <a class="col" href="#">版權聲明</a>
+        </div>
       </div>
-      <img src="" alt="LOGO">
-      <div>
-        <a href="#">常見問題</a>
-        <a href="#">關於我們</a>
-        <a href="#">版權聲明</a>
-      </div>
+      <div class="horiLine"></div>
+      <p>&copy;2023 by 2207LAB 貳貳零柒二六支部</p>
     </div>
-    <div>HORI-LINE</div>
-    <p>&copy;2023 by 2207LAB 貳貳零柒二六支部</p>
   </footer>
 
 
