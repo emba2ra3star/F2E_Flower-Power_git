@@ -1,6 +1,7 @@
 .body{
     flex-direction: column;
     
+    max-width: 100%;
 }
 
 /* -----header_start----- */
@@ -100,82 +101,99 @@
     background-color: #98c1d9;
 }
 /* -----header_end----- */
-
-.container{
-    /*height: 90vh;*/
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center; /* 垂直居中对齐 article */
-    margin-top: 10vh;
-    margin-bottom: 30vh;
-    /* background-color: #85A893; */
+.center{
+    display: flex;
+    justify-content: center;
 }
-.p{
-    white-space: normal;
+.container{
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 垂直居中对齐 article */
+    align-content: center;
+    margin: 10vh 0 30vh 0;
+    /* margin-top: 10vh;
+    margin-bottom: 30vh; */
+    /* background-color: floralwhite; */
+    
 }
 .main_pic{
    /* display: block; */
     display: flex;
+    
     width: 100%;
-    max-height: 90vh;
+    max-height: 100vh;
     align-items: center;
     overflow: hidden;
+    margin-top: 5vh;
     margin-bottom: 10vh;   
 }
 .img_s{
     height: auto; 
     width: 100%;
-    /* border-radius: 20px; */
+    border-radius: 20px;
 }
 
 /* 介紹內容設置 */
 .aside{
     display: flex;
     width: 100%;
-    justify-content: space-between;
-}
-.stylebox{  /*onebox外面的邊框甚麼的*/
-    /* display: flex; */
-    position: relative;
-    align-items: center;
-    justify-items: center;
-}
-.one_box{
-    display: flex;
-    position: relative;
-    align-items: stretch;
-    justify-content: space-between; /* 将内容分散在两侧 */
+    flex-direction: column;
+
+    /* max-height: 90vw; */
+
+    justify-content: center;
+    align-content: stretch;/* 將內容撐開 */
+    /* margin-left: 100px; */
     
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    /* margin-left: 15%; */
-    flex-shrink: 0;
+}
 
-    vertical-align: middle;
+.style_box{
+    position: relative;
+    /* align-items: center; */
+    justify-items: center;
+    /* flex-direction: row; */
+    margin-top: 100px;
 
-    background-color: #85A893;
 }
-.box1, .box3 {
-    border: 15px solid #0a0b0c;
-    margin: 5% 20% 5% 20%;
-    border-radius: 10px;
-    flex: 2;
-    width: 100%;
-    height: auto; 
-    overflow: hidden;     
+.content_box{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    justify-content: space-between; /* 将内容分散在两侧 */
+    align-items: center;
+    max-height: 60vh;
+    max-width: 100%;
+    min-width: 900px;
+    background-color: rgb(219, 141, 247);
+    /* justify-content: space-around; */
+    border-radius: 20px;
+
 }
-.box1 img,.box3 img{
-    object-fit: cover; /* 填充框，保持纵横比，可能会裁剪图像 */
+.img_box{
+    display: flex;
+    height: 60vh;
+    object-position: center;
+    overflow: hidden;
 }
-.box2, .box4 {
-    flex: 3;
-    padding: 20px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.img{
+    object-fit: contain;
+    /* object-position: 50% 50%; */
+    border-radius: 20px;
+    overflow: hidden;
+
 }
-.box4{
-    margin-left: 20%;
+.text_box{
+    position: relative;
+    height: auto;
+    width: 50vh;
+     /* 设置盒子高度 */
+    /* left: 10px; */
 }
+
+/* footer */
 .footer{
     display: flex;
     background-color: black;
@@ -184,3 +202,5 @@
     align-items: center;
     line-height: 5;
 }
+
+
