@@ -2,10 +2,13 @@
 .header{
     background-color: #F6F3FC;
     height: 100px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_Logo{
-    height: 100%;
+    height: 80%;
+    width: auto;
 }
 
 /* ---------------NAVBAR--------------- */
@@ -34,17 +37,39 @@
 
 /* ---------------FOOTER--------------- */
 
-/* 社群icon */
-.socialMedia_icon {
-    width: 30%;
+/* LOGO列 */
+.footerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
+/* 社群icon */
+.footer_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia_icons{
+    width: 30px;
+    padding: 2rem;
+}
+.socialMedia_icon{
+    width: 30px;
+}
+
 /* FOOTER_LOGO */
 .footer_Logo{
-    width: 30%;
+    width: 20%;
 }
 
 /* 水平線 */
 .horiLine {
     height: 0.2px;
     background-color: black;
+}
+/* footer_copyright */
+.footerCopyright{
+    display: flex;
+    justify-content: center;
 }
