@@ -45,16 +45,16 @@
     <div class="navBar_btnBox"><a class="navBar_btn" href="./aboutUs.html">關於我們</a></div>
     <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
   </nav> -->
-  <header class="header row">
+  <header class="header d-flex">
     <!-- 漢堡選單 -->
-    <button class="navbar-toggler col-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- LOGO -->
-    <img class="header_Logo col-10" src="../img/Logo_.png" alt="...">
+    <img class="header_Logo" src="../img/Logo_.png" alt="...">
     <!-- 用戶ICON -->
-    <img class="col-1" src="../img___/img_icon/Male User.png" alt="...">
+    <img class="header_userIcon" src="../img___/img_icon/Male User.png" alt="...">
   </header>
   <!-- navigation -->
   <nav class="navbar navbar-expand-lg">
@@ -100,7 +100,7 @@
 
     <!-- banner -->
     <div id="carouselExampleSlidesOnly" class="container carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner banner_effect">
         <div class="carousel-item active">
           <img src="../img___/img_banner/banner-black.png" class="d-block w-100" alt="...">
         </div>
@@ -126,32 +126,34 @@
 
     <!-- 所有商品展示欄 -->
     <div class="container">
-      <div>ALL-ITEMS</div>
-      <div>
-        <div class="AllItems_quote">
+      <div class="AllItems_title">
+        <img src="../img___/img_icon/All_Item-01.png" alt="...">
+      </div>
+      <div class="AllItems_content">
+        <div class="AllItems_quotes">
           <img src="../img___/img_icon/corner_1.png" alt="...">
           <img src="../img___/img_icon/corner_2.png" alt="...">
         </div>
-        <div class="row">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.1.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.2.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_1.3.jpeg" alt="...">
+        <div class="AllItems_imgs d-flex">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_1.1.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_1.2.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_1.3.jpeg" alt="...">
         </div>
-        <div class="row">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.1.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.2.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_2.3.jpeg" alt="...">
+        <div class="AllItems_imgs d-flex">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_2.1.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_2.2.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_2.3.jpeg" alt="...">
         </div>
-        <div class="row">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.1.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.2.jpeg" alt="...">
-          <img class="AllItems_img col" src="../img___/img_doll/IMG_3.3.jpeg" alt="...">
+        <div class="AllItems_imgs d-flex">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_3.1.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_3.2.jpeg" alt="...">
+          <img class="AllItems_img" src="../img___/img_doll/IMG_3.3.jpeg" alt="...">
         </div>
-      </div>
-      <!-- 換頁紐 -->
-      <div>
-        <a href="#">1</a>
-        <div><a href="#">下一頁</a></div>
+        <!-- 換頁紐 -->
+        <div class="AllItems_pageNums">
+          <a href="#">1</a>
+          <div><a href="#">下一頁</a></div>
+        </div>
       </div>
     </div>
   </main>

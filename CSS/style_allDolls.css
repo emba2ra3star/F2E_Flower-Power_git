@@ -1,65 +1,153 @@
+body {
+    background-color: #B79CEE;
+}
+
 /* ---------------HEADER--------------- */
-.header{
+.header {
     background-color: #F6F3FC;
     height: 100px;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_Logo{
+.navbar-toggler-icon {
+    width: 5rem;
+    height: 5rem;
+    fill: aqua;
+}
+
+.header_Logo {
     height: 80%;
     width: auto;
 }
 
+.header_userIcon {
+    width: 5rem;
+}
+
 /* ---------------NAVBAR--------------- */
-.navbar{
+.navbar {
     padding: 0;
 }
+
 /* 選單 */
 .navBar_ul {
     flex-direction: row;
 }
 
-/* ---------------ALL-ITEMS--------------- */
+/* ---------------BANNER--------------- */
+/* banner */
+#carouselExampleSlidesOnly {
+    margin-bottom: 68px;
+}
 
-
-
-/* 展示照片 */
-.AllItems_img {
-    width: 30%;
-    border-radius: 20px;
+.banner_effect {
+    border-radius: 31px;
+    box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
 }
 
 
+/* ---------------ALL-ITEMS--------------- */
+/* 標題 */
+.AllItems_title {
+    display: flex;
+    justify-content: center;
+}
+
+.AllItems_title img {
+    background-color: #FFD964;
+    box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    padding: 2rem;
+    border-radius: 7px;
+}
+
+/* 展示區域 */
+.AllItems_content {
+    background-color: #FEF4EA;
+    box-shadow: inset 4px 4px 4.2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 300px;
+    padding: 5%;
+    padding-bottom: 1rem;
+    border-radius: 42px;
+}
+
+/* 引號 */
+.AllItems_quotes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AllItems_quotes img {
+    width: 90px;
+    height: 90px;
+}
+/* 引號陰影 */
+.AllItems_quotes img::before {
+    background-image: url('../img___/img_icon/corner_1.png');
+    opacity: 1;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+/* 展示照片 */
+.AllItems_imgs {
+    margin: 0 90px 90px;
+    justify-content: space-around;
+}
+
+.AllItems_img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+/* 頁籤 */
+.AllItems_pageNums {
+    display: flex;
+    justify-content: center;
+}
+
+.AllItems_pageNums div a {
+    /*下一頁*/
+    margin: 0 1rem;
+}
 
 
 
 
 /* ---------------FOOTER--------------- */
+footer {
+    background-color: #F6F3FC;
+    padding-top: 1rem;
+}
 
 /* LOGO列 */
-.footerInfo{
+.footerInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
+
 /* 社群icon */
-.footer_icons{
+.footer_icons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.socialMedia_icons{
+
+.socialMedia_icons {
     width: 30px;
     padding: 2rem;
 }
-.socialMedia_icon{
+
+.socialMedia_icon {
     width: 30px;
 }
 
 /* FOOTER_LOGO */
-.footer_Logo{
+.footer_Logo {
     width: 20%;
 }
 
@@ -68,8 +156,10 @@
     height: 0.2px;
     background-color: black;
 }
+
 /* footer_copyright */
-.footerCopyright{
+.footerCopyright {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
