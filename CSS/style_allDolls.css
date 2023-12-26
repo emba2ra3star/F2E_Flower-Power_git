@@ -3,11 +3,19 @@ body {
 }
 
 /* ---------------HEADER--------------- */
+.headerArea {
+    position: fixed;
+    top: 0;
+    z-index: 10;    
+    width: 100%;
+}
+
 .header {
     background-color: #F6F3FC;
-    height: 100px;
+    height: 90px;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .navbar-toggler-icon {
@@ -22,17 +30,53 @@ body {
 }
 
 .header_userIcon {
-    width: 5rem;
+    width: 3rem;
 }
 
 /* ---------------NAVBAR--------------- */
 .navbar {
+    /* display: none; */
     padding: 0;
+    background-color: #000000;
 }
 
 /* 選單 */
 .navBar_ul {
     flex-direction: row;
+}
+
+.nav-link {
+    color: #B79CEE !important;
+}
+
+/* ---------------MAIN--------------- */
+main {
+    margin-top: 130px;
+}
+
+/* ---------------文字跑馬燈--------------- */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* 调整动画持续时间和其他参数 */
+}
+
+.marquee-content p {
+    display: inline-block;
+    margin: 0.2rem 3rem; /* 去除段落的默认外边距 */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(120%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* ---------------BANNER--------------- */
@@ -82,6 +126,7 @@ body {
     width: 90px;
     height: 90px;
 }
+
 /* 引號陰影 */
 .AllItems_quotes img::before {
     background-image: url('../img___/img_icon/corner_1.png');
@@ -119,7 +164,7 @@ body {
 /* ---------------FOOTER--------------- */
 footer {
     background-color: #F6F3FC;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 /* LOGO列 */
@@ -127,7 +172,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* 社群icon */
@@ -161,5 +206,5 @@ footer {
 .footerCopyright {
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
+    margin: 0.5rem 0;
 }
