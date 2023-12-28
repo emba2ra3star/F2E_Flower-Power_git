@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Power | Introduce Product</title>
+   
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style_global.css">
+    <link rel="stylesheet" href="../CSS/style_introProduct.css">
+   
+    <!----- fonts ----->
+    <!-- Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Agbalumo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+   
+    <!--  RWD斷點   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!-----header_start----->
+        <!-- header + navigator -->
+        <div class="headerArea">
+            <header class="header d-flex">
+                <!-- 漢堡選單 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- LOGO -->
+                <img class="header_Logo" src="../img/Logo_.png" alt="...">
+                <!-- 用戶ICON -->
+                <img class="header_userIcon" src="../img___/img_icon/Male User.png" alt="...">
+            </header>
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav navBar_ul">
+                            <li class="nav-item col">
+                                <a class="nav-link active" aria-current="page" href="../index.html">回到首頁</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link" href="../HTML/allDolls.html">所有商品</a>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link" href="../HTML/introProduct.html">本季主打</a>
+                            </li>
+                            <li class="nav-item dropdown col">
+                                <a class="nav-link dropdown-toggle" style="padding-right: 1rem;" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    系列介紹專區
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../HTML/introProduct.html">系列一</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/introProduct.html">系列二</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/introProduct.html">系列三</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item navBar_secItem col">
+                                <a class="nav-link" href="#">常見問題</a>
+                            </li>
+                            <li class="nav-item navBar_secItem col">
+                                <a class="nav-link" href="../HTML/aboutUs.html">關於我們</a>
+                            </li>
+                            <li class="nav-item navBar_secItem col">
+                                <a class="nav-link" href="#">版權宣告</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <!-----header_end----->
+
+
+    <div class="center">
+        <main class="container_mainpart">
+            <div class="main_pic">
+                <img class="img_s" src="../img/1_backgrd.jpg" alt="pf_flower">
+            </div>
+            <aside class="aside">
+                <!-- 放該頁文字圖片 -->
+                <div class="style_box">
+                    <div class="content_box" id="box1">
+                        <div class="img_box"><img class="img" src="../img/IMG_3.2.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Straightforward</h2>
+                            <p class="text1">哎呀~你說甚麼?哈哈我知道我是個帥氣的人啦</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style_box">
+                    <div class="content_box" id="box2">
+                        <div class="img_box"><img class="img" src="../img/IMG_3.1.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Cheery</h2>
+                            <p class="text1">今天真是爽快的一天啊~跟我一起去探險吧!</p>          
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="style_box">
+                    <div class="content_box" id="box3">
+                        <div class="img_box"><img class="img" src="../img/IMG_3.3.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Show Off</h2>
+                            <p class="text1">
+                                哼!我是是艦上最厲害的太空人，沒有人贏的過我</p>
+                          </div>
+                    </div>
+                </div>
+                
+            </aside>
+        </main>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footerInfo row">
+                <div class="footer_icons col" id="footerInfo_1">
+                    <a class="socialMedia_icons" href="#"><img class="socialMedia_icon"
+                            src="../img___/img_icon/twitter.png" alt="TWITTER"></a>
+                    <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/ig.png"
+                            alt="IG"></a>
+                    <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/fb.png"
+                            alt="FB"></a>
+                </div>
+                <img class="footer_Logo col" id="footerInfo_2" src="../img/Logo_.png" alt="LOGO">
+                <div class="footer_links col" id="footerInfo_3">
+                    <a class="footer_link" href="#">常見問題</a>
+                    <a class="footer_link" href="../HTML/aboutUs.html">關於我們</a>
+                    <a class="footer_link" href="#">版權聲明</a>
+                </div>
+            </div>
+            <div class="horiLine"></div>
+            <p class="footerCopyright">&copy;2023 by 2207LAB 貳貳零柒二六支部</p>
+        </div>
+    </footer>
+
+    <!-- javascipt -->
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/js_header_btn.js"></script>
+    <script src="../script/js_introProduct.js"></script>
+</body>
+
+</html>
+
+
+cheery
+今天真是爽快的一天啊~跟我一起去探險吧!
+
+
