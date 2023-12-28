@@ -98,6 +98,53 @@ p{
 }
 
 /* ---------------MAIN--------------- */
+main {
+    margin-top: 90px;
+}
+
+/* ---------------文字跑馬燈--------------- */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    /* 调整动画持续时间和其他参数 */
+}
+
+.marquee-content p {
+    display: inline-block;
+    margin: 0.2rem 3rem;
+    /* 去除段落的默认外边距 */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(120%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ---------------MAIN--------------- */
+/* title_aboutus */
+.aboutUs_title{
+    background-color: #FFD964;
+    box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    min-width: 150px;
+    padding: 5%;
+    border-radius: 7px;
+}
+
+
+
+
+
 
 
 /* ---------------FOOTER--------------- */
