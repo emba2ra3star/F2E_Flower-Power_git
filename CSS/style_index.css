@@ -82,6 +82,8 @@
     text-decoration: none;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 .nav_list_btns:hover {
     scale: 1.2;
@@ -92,10 +94,6 @@
     text-decoration: inherit;
 }
 
-#series1 {}
-
-#series2 {}
-
 #return_btn{
     color: #595959;
 }
@@ -105,6 +103,7 @@
 .footer {
     position: fixed;
     bottom: 0;
+    background-color: rgba(0,0,0,0);
 }
 
 .footer_list{
