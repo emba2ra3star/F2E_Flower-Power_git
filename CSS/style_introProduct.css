@@ -174,7 +174,7 @@
     align-items: center;
 }
 
-.container{
+.container_mainpart{
     /* display: flex; */
     width: 100%;
     flex-direction: column;
@@ -188,7 +188,7 @@
     
 }
 @media(max-width:960){
-    .container{
+    .container_mainpart{
         /* display: flex; */
         width: 100%;
         flex-direction: column;
@@ -402,7 +402,7 @@
 /* 480PX響應式 */
 
 @media(max-width:480){
-    .container{
+    .container_mainpart{
         display: flex;
         width: 100%;
         flex-direction: column;
