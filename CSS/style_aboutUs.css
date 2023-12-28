@@ -27,75 +27,6 @@ p{
         font-size: 14px;
     }
 }
-/* ---------------HEADER--------------- */
-.headerArea {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-}
-
-.header {
-    background-color: #F6F3FC;
-    height: 90px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-}
-
-.navbar-toggler-icon {
-    width: 3rem;
-    height: 3rem;
-    fill: black;
-}
-
-.header_Logo {
-    height: 80%;
-    width: auto;
-}
-
-.header_userIcon {
-    width: 3rem;
-}
-
-/* ---------------NAVBAR--------------- */
-.navbar {
-    /* display: none; */
-    padding: 0;
-    background-color: #E5D5FC;
-}
-
-/* 選單 */
-.navbar-collapse{
-    justify-content: space-around;
-}
-.navBar_ul {
-    flex-direction: row;
-    width: 100%;
-}
-
-.nav-link {
-    color: #B79CEE !important;
-}
-
-.dropdown-menu {
-    position:fixed;
-    background-color: #E5D5FC;
-}
-
-.dropdown-item {
-    color: #B79CEE;
-}
-
-.navBar_secItem{
-    display: block;
-}
-
-@media (max-width:768px) {
-    .navBar_secItem{
-        display: none;
-    }
-}
 
 /* ---------------MAIN--------------- */
 main {
@@ -133,104 +64,15 @@ main {
 /* ---------------MAIN--------------- */
 /* title_aboutus */
 .aboutUs_title{
-    background-color: #FFD964;
-    box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
+    /* background-color: #FFD964; */
+    /* box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2); */
     width: 40%;
     min-width: 150px;
-    padding: 5%;
+    /* padding: 5%; */
     border-radius: 7px;
+    margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
-/* ---------------FOOTER--------------- */
-footer {
-    background-color: #F6F3FC;
-    padding: 1rem 0;
-}
-
-/* LOGO列 */
-.footerInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-@media (max-width:768px) {
-    .footerInfo {
-        display: grid;
-    }   
-    #footerInfo_1{
-        order: 3;
-    }
-    #footerInfo_2{
-        order: 1;
-    }
-    #footerInfo_3{
-        order: 2;
-    }
-}
-
-/* 社群icon */
-.footer_icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.socialMedia_icons {
-    padding: 0 2rem;
-}
-
-.socialMedia_icon {
-    width: 30px;
-}
-
-/* FOOTER_LOGO */
-.footer_Logo {
-    width: 20%;
-}
-@media (max-width:768px) {
-    .footer_Logo {
-        width: 50%;
-        justify-self: center;
-    }
-}
-
-/* 連結 */
-.footer_links{
-    display: flex;
-    padding: 1rem 0px;
-    justify-content: space-around;
-}    
-@media ((max-width:768px)) {
-    .footer_links{
-        display: block;
-    }    
-}
-
-
-.footer_link{
-    display: flex;
-    padding: 0;
-    justify-content: center;
-}
-
-/* 水平線 */
-.horiLine {
-    height: 0.2px;
-    margin: 1rem 0px;
-    background-color: black;
-}
-
-/* footer_copyright */
-.footerCopyright {
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem 0;
+.mainBanner img{
+    width: 100%;
 }
