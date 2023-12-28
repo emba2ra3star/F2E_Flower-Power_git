@@ -16,6 +16,17 @@ a{
     color: black;
 }
 
+p{
+    font-size: 16px;
+}
+@media (max-width:480px) {
+    a{
+        font-size: 14px
+    }
+    p{
+        font-size: 14px;
+    }
+}
 /* ---------------HEADER--------------- */
 .headerArea {
     position: fixed;
@@ -51,7 +62,7 @@ a{
 .navbar {
     /* display: none; */
     padding: 0;
-    background-color: #000000;
+    background-color: #E5D5FC;
 }
 
 /* 選單 */
@@ -60,7 +71,7 @@ a{
 }
 .navBar_ul {
     flex-direction: row;
-    width: 90%;
+    width: 100%;
 }
 
 .nav-link {
@@ -68,11 +79,22 @@ a{
 }
 
 .dropdown-menu {
-    background-color: black;
+    position:fixed;
+    background-color: #E5D5FC;
 }
 
 .dropdown-item {
-    color: #fff;
+    color: #B79CEE;
+}
+
+.navBar_secItem{
+    display: block;
+}
+
+@media (max-width:768px) {
+    .navBar_secItem{
+        display: none;
+    }
 }
 
 /* ---------------MAIN--------------- */
@@ -123,15 +145,19 @@ main {
 /* ---------------ALL-ITEMS--------------- */
 /* 標題 */
 .AllItems_title {
+    position: relative;
+    top: 3rem;
     display: flex;
     justify-content: center;
+    margin-top: -5rem;
 }
 
 .AllItems_title img {
     background-color: #FFD964;
     box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
     width: 40%;
-    padding: 2rem;
+    min-width: 150px;
+    padding: 5%;
     border-radius: 7px;
 }
 
@@ -141,7 +167,7 @@ main {
     box-shadow: inset 4px 4px 4.2px rgba(0, 0, 0, 0.2);
     margin-bottom: 300px;
     padding: 5%;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     border-radius: 42px;
 }
 
@@ -149,6 +175,12 @@ main {
 .AllItems_quotes {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:480px) {
+    .AllItems_quotes {
+        display: none;
+    }
 }
 
 .AllItems_quotes img {
@@ -172,6 +204,11 @@ main {
     flex-wrap: wrap;
     justify-content: space-between ;
 }
+@media (max-width:480px){
+    .AllItems_imgs {
+        margin:60px 10px;
+    }
+}
 
 .AllItems_img {
     width: 25%;
@@ -185,12 +222,6 @@ main {
         margin: 0 10px 80px;
     }
 }
-
-/* @media (min-width:768px) {
-    .AllItems_img {
-        width: 10%;
-    }
-} */
 
 /* 頁籤 */
 .AllItems_pageNums {
@@ -220,6 +251,21 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width:768px) {
+    .footerInfo {
+        display: grid;
+    }   
+    #footerInfo_1{
+        order: 3;
+    }
+    #footerInfo_2{
+        order: 1;
+    }
+    #footerInfo_3{
+        order: 2;
+    }
+}
+
 /* 社群icon */
 .footer_icons {
     display: flex;
@@ -228,8 +274,7 @@ footer {
 }
 
 .socialMedia_icons {
-    width: 30px;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .socialMedia_icon {
@@ -240,10 +285,36 @@ footer {
 .footer_Logo {
     width: 20%;
 }
+@media (max-width:768px) {
+    .footer_Logo {
+        width: 50%;
+        justify-self: center;
+    }
+}
+
+/* 連結 */
+.footer_links{
+    display: flex;
+    padding: 1rem 0px;
+    justify-content: space-around;
+}    
+@media ((max-width:768px)) {
+    .footer_links{
+        display: block;
+    }    
+}
+
+
+.footer_link{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
 
 /* 水平線 */
 .horiLine {
     height: 0.2px;
+    margin: 1rem 0px;
     background-color: black;
 }
 
