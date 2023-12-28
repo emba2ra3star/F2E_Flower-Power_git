@@ -28,27 +28,57 @@
 
 <body>
     <!-----header_start----->
-    <header class="header">
-        <div class="menu"><img id="menu_btn" src="../img/test_img1.png" alt="menu btn"></div>
-        <a id="header_LOGO" href="../index.html"><img src="../img/Logo_.png" alt="LOGO"></a>
-        <img id="header_userSetting_btn" src="../img/test_img1.png" alt="user setting">
+  <div class="headerArea">
+    <header class="header d-flex">
+      <!-- 漢堡選單 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- LOGO -->
+      <img class="header_Logo" src="../img/Logo_.png" alt="...">
+      <!-- 用戶ICON -->
+      <img class="header_userIcon" src="../img___/img_icon/Male User.png" alt="...">
     </header>
-    <nav id="navBar">
-        <div class="navBar_btnBox"><a class="navBar_btn" href="../index.html">回到首頁</a></div>
-        <div class="navBar_btnBox"><a class="navBar_btn" href="./allProduct.html">所有商品</a></div>
-        <div class="navBar_btnBox"><a class="navBar_btn" href="./introProduct.html">本季主打</a></div>
-        <div class="navBar_btnBox">
-            <a class="navBar_btn" href="#">系列介紹專區</a>
-            <ul class="navBar_showList">
-                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列一</a></li>
-                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列二</a></li>
-                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列三</a></li>
-            </ul>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav navBar_ul">
+            <li class="nav-item col">
+              <a class="nav-link active" aria-current="page" href="#">回到首頁</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" href="#">所有商品</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" href="#">本季主打</a>
+            </li>
+            <li class="nav-item dropdown col">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem;" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                系列介紹專區
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">系列一</a></li>
+                <li><a class="dropdown-item" href="#">系列二</a></li>
+                <li><a class="dropdown-item" href="#">系列三</a></li>
+              </ul>
+            </li>
+            <li class="nav-item navBar_secItem col">
+              <a class="nav-link" href="#">常見問題</a>
+            </li>
+            <li class="nav-item navBar_secItem col">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item navBar_secItem col">
+              <a class="nav-link" href="#">版權宣告</a>
+            </li>
+          </ul>
         </div>
-        <div class="navBar_btnBox"><a class="navBar_btn" href="#">常見問題</a></div>
-        <div class="navBar_btnBox"><a class="navBar_btn" href="#">關於我們</a></div>
-        <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
+      </div>
     </nav>
+  </div>
     <!-----header_end----->
 
 
@@ -95,7 +125,30 @@
             </aside>
         </main>
     </div>
-    <footer class="footer">ooo </footer>
+
+    <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footerInfo row">
+        <div class="footer_icons col" id="footerInfo_1">
+          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/twitter.png"
+              alt="TWITTER"></a>
+          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/ig.png"
+              alt="IG"></a>
+          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/fb.png"
+              alt="FB"></a>
+        </div>
+        <img class="footer_Logo col"  id="footerInfo_2" src="../img/Logo_.png" alt="LOGO">
+        <div class="footer_links col" id="footerInfo_3">
+          <a class="footer_link" href="#">常見問題</a>
+          <a class="footer_link" href="#">關於我們</a>
+          <a class="footer_link" href="#">版權聲明</a>
+        </div>
+      </div>
+      <div class="horiLine"></div>
+      <p class="footerCopyright">&copy;2023 by 2207LAB 貳貳零柒二六支部</p>
+    </div>
+  </footer>
 
     <!-- javascipt -->
     <script src="../script/jquery-3.7.1.min.js"></script>
