@@ -2,159 +2,106 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Flower Power | Introduce Product</title>
-
-  <link rel="stylesheet" href="../CSS/normalize.css">
-  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="../CSS/style_global.css">
-  <link rel="stylesheet" href="../CSS/style_introProduct.css">
-
-  <!----- fonts ----->
-  <!-- Noto Sans TC -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;700;900&display=swap" rel="stylesheet">
-  <!-- Agbalumo -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
-
-  <!--  RWD斷點   -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Flower Power | Introduce Product</title>
+   
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style_global.css">
+    <link rel="stylesheet" href="../CSS/style_introProduct.css">
+   
+    <!----- fonts ----->
+    <!-- Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Agbalumo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+   
+    <!--  RWD斷點   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
-  <!-----header_start----->
-  <!-- header + navigator -->
-  <div class="headerArea">
-    <header class="header d-flex">
-      <!-- 漢堡選單 -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- LOGO -->
-      <img class="header_Logo" src="../img/Logo_.png" alt="...">
-      <!-- 用戶ICON -->
-      <img class="header_userIcon" src="../img___/img_icon/Male User.png" alt="...">
+    <!-----header_start----->
+    <header class="header">
+        <div class="menu"><img id="menu_btn" src="../img/test_img1.png" alt="menu btn"></div>
+        <a id="header_LOGO" href="../index.html"><img src="../img/Logo_.png" alt="LOGO"></a>
+        <img id="header_userSetting_btn" src="../img/test_img1.png" alt="user setting">
     </header>
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav navBar_ul">
-            <li class="nav-item col">
-              <a class="nav-link active" aria-current="page" href="../index.html">回到首頁</a>
-            </li>
-            <li class="nav-item col">
-              <a class="nav-link" href="../HTML/allDolls.html">所有商品</a>
-            </li>
-            <li class="nav-item col">
-              <a class="nav-link" href="../HTML/introProduct.html">本季主打</a>
-            </li>
-            <li class="nav-item dropdown col">
-              <a class="nav-link dropdown-toggle" style="padding-right: 1rem;" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                系列介紹專區
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../HTML/introProduct.html">系列一</a></li>
-                <li><a class="dropdown-item" href="../HTML/introProduct.html">系列二</a></li>
-                <li><a class="dropdown-item" href="../HTML/introProduct.html">系列三</a></li>
-              </ul>
-            </li>
-            <li class="nav-item navBar_secItem col">
-              <a class="nav-link" href="#">常見問題</a>
-            </li>
-            <li class="nav-item navBar_secItem col">
-              <a class="nav-link" href="../HTML/aboutUs.html">關於我們</a>
-            </li>
-            <li class="nav-item navBar_secItem col">
-              <a class="nav-link" href="#">版權宣告</a>
-            </li>
-          </ul>
+    <nav id="navBar">
+        <div class="navBar_btnBox"><a class="navBar_btn" href="../index.html">回到首頁</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="./allProduct.html">所有商品</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="./introProduct.html">本季主打</a></div>
+        <div class="navBar_btnBox">
+            <a class="navBar_btn" href="#">系列介紹專區</a>
+            <ul class="navBar_showList">
+                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列一</a></li>
+                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列二</a></li>
+                <li><a class="navBar_btn" href="../HTML/introProduct.html">系列三</a></li>
+            </ul>
         </div>
-      </div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="#">常見問題</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="#">關於我們</a></div>
+        <div class="navBar_btnBox"><a class="navBar_btn" href="#">版權宣告</a></div>
     </nav>
-  </div>
-  <!-----header_end----->
+    <!-----header_end----->
 
 
-  <div class="center">
-    <main class="container">
-      <div class="main_pic">
-        <img class="img_s" src="../img/1_backgrd.jpg" alt="pf_flower">
-      </div>
-      <aside class="aside">
-        <!-- 放該頁文字圖片 -->
-        <div class="style_box">
-          <div class="content_box">
-            <div class="img_box"><img class="img" src="../img/IMG_1.1.jpeg"></div>
-            <div class="text_box">
-              <h2 class="head2">Timid Hunter</h2>
-              <p class="text1">或許大家對獵人的期待過高<br>每次都稱讚勇敢<br>可獵人也會害怕呀！</p>
+    <div class="center">
+        <main class="container_mainpart">
+            <div class="main_pic">
+                <img class="img_s" src="../img/1_backgrd.jpg" alt="pf_flower">
             </div>
-          </div>
-        </div>
+            <aside class="aside">
+                <!-- 放該頁文字圖片 -->
+                <div class="style_box">
+                    <div class="content_box">
+                        <div class="img_box"><img class="img" src="../img/IMG_1.1.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Timid Hunter</h2>
+                            <p class="text1">或許大家對獵人的期待過高<br>每次都稱讚勇敢<br>可獵人也會害怕呀！</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="style_box">
-          <div class="content_box">
-            <div class="img_box"><img class="img" src="../img/IMG_1.2.jpeg"></div>
-            <div class="text_box">
-              <h2 class="head2">Mushroom</h2>
-              <p class="text1">遍布森林每個角落的蘑菇<br>就像散落在世界上的我們<br>
-            </div>
-          </div>
-        </div>
+                <div class="style_box">
+                    <div class="content_box">
+                        <div class="img_box"><img class="img" src="../img/IMG_1.2.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Mushroom</h2>
+                            <p class="text1">遍布森林每個角落的蘑菇<br>就像散落在世界上的我們<br>                       
+                        </div>
+                    </div>
+                </div>
 
 
-        <div class="style_box">
-          <div class="content_box">
-            <div class="img_box"><img class="img" src="../img/IMG_1.3.jpeg"></div>
-            <div class="text_box">
-              <h2 class="head2">Big Ear Rabbit</h2>
-              <p class="text1">即使耳多足夠長<br>也聽不到那些竊竊私語<br>
-                好奇和傲嬌的情緒互相拉扯<br>想知道他們在說甚麼<br>
-                但絕對不會上前去詢問<br></p>
-            </div>
-          </div>
-        </div>
+                <div class="style_box">
+                    <div class="content_box">
+                        <div class="img_box"><img class="img" src="../img/IMG_1.3.jpeg"></div>   
+                        <div class="text_box">
+                            <h2 class="head2">Big Ear Rabbit</h2>
+                            <p class="text1">即使耳多足夠長<br>也聽不到那些竊竊私語<br>
+                                    好奇和傲嬌的情緒互相拉扯<br>想知道他們在說甚麼<br>
+                                    但絕對不會上前去詢問<br></p>
+                          </div>
+                    </div>
+                </div>
 
-      </aside>
-    </main>
-  </div>
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footerInfo row">
-        <div class="footer_icons col" id="footerInfo_1">
-          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/twitter.png"
-              alt="TWITTER"></a>
-          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/ig.png"
-              alt="IG"></a>
-          <a class="socialMedia_icons" href="#"><img class="socialMedia_icon" src="../img___/img_icon/fb.png"
-              alt="FB"></a>
-        </div>
-        <img class="footer_Logo col" id="footerInfo_2" src="../img/Logo_.png" alt="LOGO">
-        <div class="footer_links col" id="footerInfo_3">
-          <a class="footer_link" href="#">常見問題</a>
-          <a class="footer_link" href="../HTML/aboutUs.html">關於我們</a>
-          <a class="footer_link" href="#">版權聲明</a>
-        </div>
-      </div>
-      <div class="horiLine"></div>
-      <p class="footerCopyright">&copy;2023 by 2207LAB 貳貳零柒二六支部</p>
+            </aside>
+        </main>
     </div>
-  </footer>
+    <footer class="footer">ooo </footer>
 
-  <!-- javascipt -->
-  <script src="../script/jquery-3.7.1.min.js"></script>
-  <script src="../script/bootstrap.min.js"></script>
-  <script src="../script/js_header_btn.js"></script>
-  <script src="../script/js_introProduct.js"></script>
+    <!-- javascipt -->
+    <script src="../script/jquery-3.7.1.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/js_header_btn.js"></script>
+    <script src="../script/js_introProduct.js"></script>
 </body>
 
 </html>

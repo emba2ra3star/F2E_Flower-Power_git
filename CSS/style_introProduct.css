@@ -5,78 +5,43 @@
 }
 
 /* -----header_start----- */
-/* ---------------HEADER--------------- */
-.headerArea {
+.header{
+    background-color: #1d1e2c;
+    color: #fff;
     position: fixed;
-    top: 0;
     z-index: 10;
-    width: 100%;
-}
-
-.header {
-    background-color: #F6F3FC;
-    height: 90px;
+    top: 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
-}
-
-.navbar-toggler-icon {
-    width: 3rem;
-    height: 3rem;
-    fill: black;
-}
-
-.header_Logo {
-    height: 80%;
-    width: auto;
-}
-
-.header_userIcon {
-    width: 3rem;
-}
-
-/* ---------------NAVBAR--------------- */
-.navbar {
-    /* display: none; */
-    padding: 0;
-    background-color: #E5D5FC;
-}
-
-/* 選單 */
-.navbar-collapse{
-    justify-content: space-around;
-}
-.navBar_ul {
-    flex-direction: row;
     width: 100%;
+    min-width: inherit;
+    height: 10vh;
+    padding: 0px 30px;
 }
 
-.nav-link {
-    color: #B79CEE !important;
+.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-.dropdown-menu {
-    position:fixed;
-    background-color: #E5D5FC;
+#menu_btn{
+    height: 80%;
 }
 
-.dropdown-item {
-    color: #B79CEE;
+#header_LOGO{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#header_LOGO img{
+    height: 80%;
 }
 
-.navBar_secItem{
-    display: block;
+#header_userSetting_btn{
+    height: 80%;
 }
-
-@media (max-width:768px) {
-    .navBar_secItem{
-        display: none;
-    }
-}
-
-/* header結束 */
-
 /* 文字 */
 .head2{
     font-family: "Agbalumo",sans-serif;
@@ -209,7 +174,7 @@
     align-items: center;
 }
 
-.container{
+.container_mainpart{
     /* display: flex; */
     width: 100%;
     flex-direction: column;
@@ -223,7 +188,7 @@
     
 }
 @media(max-width:960){
-    .container{
+    .container_mainpart{
         /* display: flex; */
         width: 100%;
         flex-direction: column;
@@ -437,7 +402,7 @@
 /* 480PX響應式 */
 
 @media(max-width:480){
-    .container{
+    .container_mainpart{
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -533,92 +498,13 @@
     }
 }
 /* footer */
-/* ---------------FOOTER--------------- */
-footer {
-    background-color: #F6F3FC;
-    padding: 1rem 0;
-}
-
-/* LOGO列 */
-.footerInfo {
+.footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-@media (max-width:768px) {
-    .footerInfo {
-        display: grid;
-    }   
-    #footerInfo_1{
-        order: 3;
-    }
-    #footerInfo_2{
-        order: 1;
-    }
-    #footerInfo_3{
-        order: 2;
-    }
-}
-
-/* 社群icon */
-.footer_icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.socialMedia_icons {
-    padding: 0 2rem;
-}
-
-.socialMedia_icon {
-    width: 30px;
-}
-
-/* FOOTER_LOGO */
-.footer_Logo {
-    width: 20%;
-}
-@media (max-width:768px) {
-    .footer_Logo {
-        width: 50%;
-        justify-self: center;
-    }
-}
-
-/* 連結 */
-.footer_links{
-    display: flex;
-    padding: 1rem 0px;
-    justify-content: space-around;
-}    
-@media ((max-width:768px)) {
-    .footer_links{
-        display: block;
-    }    
-}
-
-
-.footer_link{
-    display: flex;
-    padding: 0;
-    justify-content: center;
-}
-
-/* 水平線 */
-.horiLine {
-    height: 0.2px;
-    margin: 1rem 0px;
     background-color: black;
-}
-
-/* footer_copyright */
-.footerCopyright {
-    display: flex;
+    height: 10vh;
     justify-content: center;
-    margin: 0.5rem 0;
+    align-items: center;
+    line-height: 5;
 }
 
 
