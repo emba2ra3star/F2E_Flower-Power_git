@@ -17,15 +17,13 @@ html{
     height: 100vh;
     min-width: 750px;
 }
-
+/* 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: 1120px; */
-    /* min-width: 750px; */
     margin: 36px auto 0;
-}
+} */
 
 /* -----font-setting----- */
 .head1{
