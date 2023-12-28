@@ -171,7 +171,7 @@
     align-items: center;
     overflow: hidden;
     margin-top: 5vh;
-    margin-bottom: 10vh; 
+    margin-bottom: 20vh; 
     border-radius: 30px;
     box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
 /* 水平偏移量 垂直偏移量 模糊度 扩散半径 阴影颜色 */
@@ -185,7 +185,22 @@
         align-items: center;
         overflow: hidden;
         margin-top: 4vh;
-        margin-bottom: 5vh; 
+        margin-bottom: 25vh; 
+        border-radius: 20px;
+        box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
+     /* 水平偏移量 垂直偏移量 模糊度 扩散半径 阴影颜色 */
+     }
+}
+@media(max-width:747px){
+    .main_pic{
+        /* display: block; */
+        display: flex;
+        width: 100%;
+        max-height: 100%;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 4vh;
+        margin-bottom: 13vh; 
         border-radius: 20px;
         box-shadow: 18px 18px 4.2px rgba(0, 0, 0, 0.2);
      /* 水平偏移量 垂直偏移量 模糊度 扩散半径 阴影颜色 */
@@ -195,10 +210,10 @@
     /* height: auto;  */
     width: 100%;
     border-radius: 20px;
-    
 }
 
 /* 介紹內容設置 */
+
 .aside{
     display: flex;
     width: 100%;
@@ -261,7 +276,7 @@
         max-width: 100%;
         /* justify-content: space-around; */
         border-radius: 15px;  
-
+        box-shadow: 18px 18px 4px rgba(0, 0, 0, 0.2);
 
     }
 }
@@ -275,14 +290,18 @@
         /* max-width: 100%; */
         border-radius: 15px;
         max-height: 35vh;
+        box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.2);
+
     }
 }
 .img_box{
     display: flex;
-    height: 60vh;
+    height: 50vh;
     object-position: center;
     border-radius: 20px;
     overflow: hidden;
+    margin: 5vh 5vh 5vh 10vh;
+    
 }
 @media(max-width:960px){
     .img_box{
@@ -354,7 +373,7 @@
         position: relative;
         height: auto;
         width: 60vh;
-        margin-left: 30px;
+        margin-left: 20px;
 
     }
 }
@@ -386,7 +405,10 @@
 @media(max-width:480px){
     .main_pic{
          margin-top: 1vh;
-         margin-bottom: 3vh; 
+         margin-bottom: 10vh; 
+         border-radius: 10px;
+         box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+
      }
 }
 @media(max-width:480px){
@@ -440,6 +462,7 @@
         justify-content: center;
         align-items: center;
         margin: 3vh 0 0 0;
+
     }
 }
 
@@ -467,4 +490,7 @@
 }
 
 
-
+/* 
+img {
+    border: 0.8px solid rgb(255, 255, 255);
+  } */
