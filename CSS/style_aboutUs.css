@@ -70,9 +70,60 @@ main {
     min-width: 150px;
     /* padding: 5%; */
     border-radius: 7px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .mainBanner img{
     width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+
+/* 水平線 */
+.mainHoriLine {
+    height: 0.2px;
+    margin: 1rem 0px 100px;
+    background-color: black;
+}
+
+.mainOurInfo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 132px;
+}
+
+.mainOurInfo img{
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin: auto 0;
+}
+
+.Info_textArea{
+    min-width: 300px;
+    max-width: 40rem;
+    height: auto;
+    background-color: #FEF4EA;
+    align-self: center;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 3rem;
+}
+.Info_textArea p{
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    .mainOurInfo{
+        display: block;
+    }   
+    .Info_img{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .Info_textArea{
+        padding: 2rem 3rem;
+    }
 }
