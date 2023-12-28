@@ -1,8 +1,10 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-*,*:before,*:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -11,19 +13,21 @@ body {
     min-width: 440px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-p{
+p {
     font-size: 16px;
 }
+
 @media (max-width:480px) {
-    a{
+    a {
         font-size: 14px
     }
-    p{
+
+    p {
         font-size: 14px;
     }
 }
@@ -44,11 +48,6 @@ p{
     padding: 0 1rem;
 }
 
-.navbar-toggler-icon {
-    width: 3rem;
-    height: 3rem;
-    fill: black;
-}
 
 .header_Logo {
     height: 80%;
@@ -67,9 +66,10 @@ p{
 }
 
 /* 選單 */
-.navbar-collapse{
+.navbar-collapse {
     justify-content: space-around;
 }
+
 .navBar_ul {
     flex-direction: row;
     width: 100%;
@@ -80,7 +80,7 @@ p{
 }
 
 .dropdown-menu {
-    position:fixed;
+    position: fixed;
     background-color: #E5D5FC;
 }
 
@@ -88,15 +88,19 @@ p{
     color: #B79CEE;
 }
 
-.navBar_secItem{
+.navBar_secItem {
     display: block;
 }
 
 @media (max-width:768px) {
-    .navBar_secItem{
+    .navBar_secItem {
         display: none;
     }
 }
+
+/* 修改調整 */
+
+
 
 /* ---------------MAIN--------------- */
 main {
@@ -144,14 +148,16 @@ main {
 
 
 /* ---------------ALL-ITEMS--------------- */
-.breadcrumb{
+.breadcrumb {
     position: relative;
     top: -4vh;
 }
-.breadcrumb-item.active{
+
+.breadcrumb-item.active {
     color: black;
     font-weight: 600;
 }
+
 /* 標題 */
 .AllItems_title {
     position: relative;
@@ -169,6 +175,7 @@ main {
     padding: 1.5rem 5%;
     border-radius: 7px;
 }
+
 @media (max-width:786px) {
     .AllItems_title img {
         padding: 5%;
@@ -217,11 +224,12 @@ main {
     margin: 0 50px 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
-@media (max-width:480px){
+
+@media (max-width:480px) {
     .AllItems_imgs {
-        margin:60px 10px;
+        margin: 60px 10px;
     }
 }
 
@@ -233,7 +241,7 @@ main {
     margin: 0 20px 80px;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .AllItems_img {
         width: 40%;
         margin: 0 10px 80px;
@@ -272,14 +280,17 @@ main {
 @media (max-width:768px) {
     .footerInfo {
         display: grid;
-    }   
-    #footerInfo_1{
+    }
+
+    #footerInfo_1 {
         order: 3;
     }
-    #footerInfo_2{
+
+    #footerInfo_2 {
         order: 1;
     }
-    #footerInfo_3{
+
+    #footerInfo_3 {
         order: 2;
     }
 }
@@ -303,6 +314,7 @@ main {
 .footer_Logo {
     width: 20%;
 }
+
 @media (max-width:768px) {
     .footer_Logo {
         width: 50%;
@@ -311,19 +323,20 @@ main {
 }
 
 /* 連結 */
-.footer_links{
+.footer_links {
     display: flex;
     padding: 1rem 0px;
     justify-content: space-around;
-}    
+}
+
 @media ((max-width:768px)) {
-    .footer_links{
+    .footer_links {
         display: block;
-    }    
+    }
 }
 
 
-.footer_link{
+.footer_link {
     display: flex;
     padding: 0;
     justify-content: center;
@@ -344,34 +357,36 @@ main {
 }
 
 /* -----font-setting----- */
-.head1{
-    font-family: "Noto Sans",sans-serif;
+.head1 {
+    font-family: "Noto Sans", sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 
-.head2{
-    font-family: "Agbalumo",sans-serif;
+.head2 {
+    font-family: "Agbalumo", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
 }
 
-.text1{
-    font-family: "Noto Sans",sans-serif;
+.text1 {
+    font-family: "Noto Sans", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.text2{
-    font-family: "Noto Sans",sans-serif;
+.text2 {
+    font-family: "Noto Sans", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 18px */
+    line-height: 150%;
+    /* 18px */
 }
