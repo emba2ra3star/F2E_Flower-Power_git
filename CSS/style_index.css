@@ -1,12 +1,25 @@
-.body{
-    background-image:url(../img/ketVersion.jpg);
+.body {
+    background-image: url(../img/ketVersion.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.blurred-background {
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(0) brightness(1);
+    transition: filter 0.3s ease;
+    position: absolute;
+    z-index: -1;
+}
+.menu-visible{
+    filter: blur(10px) brightness(0.5);
+}
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +27,10 @@
     /* min-width: 1980px; */
     height: 100vh;
     margin-top: 0;
+    z-index: 1;
 }
 
-.LOGO-TAP{
+.LOGO-TAP {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +43,7 @@
     max-width: 100%;
     max-height: 100%;
 } */
-.LOGO-TAP p{
+.LOGO-TAP p {
     color: #fff;
     margin-top: 90vh;
     text-shadow: 0 0 8px rgba(0, 0, 0, 1);
@@ -42,10 +56,10 @@
     display: none;
 }
 
-.nav{
+.nav {
     flex-direction: column;
     align-items: center;
-    background:rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     position: absolute;
     width: 24rem;
     height: inherit;
@@ -53,19 +67,20 @@
     padding: 10% 12px 0;
 }
 
-.nav_area{
+.nav_area {
     display: inherit;
     flex-direction: inherit;
     align-items: inherit;
     width: 100%;
-}   
+}
 
-.nav_LOGO{
+.nav_LOGO {
     width: 50%;
     height: 50%;
     margin-bottom: 10px;
 }
-.nav_LOGO:hover{
+
+.nav_LOGO:hover {
     scale: 1.2;
 }
 
@@ -77,7 +92,7 @@
     list-style: none;
 }
 
-.nav_list_btns{
+.nav_list_btns {
     color: #000;
     text-decoration: none;
     margin-top: 0.5rem;
@@ -85,6 +100,7 @@
     display: flex;
     justify-content: center;
 }
+
 .nav_list_btns:hover {
     scale: 1.2;
 }
@@ -94,7 +110,7 @@
     text-decoration: inherit;
 }
 
-#return_btn{
+#return_btn {
     color: #595959;
 }
 
@@ -103,10 +119,10 @@
 .footer {
     position: fixed;
     bottom: 0;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.footer_list{
+.footer_list {
     padding: 0;
     list-style: none;
 }
